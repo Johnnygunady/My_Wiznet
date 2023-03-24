@@ -324,7 +324,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>F:\Keil_v5\C51\INC;F:\Keil_v5\C51\INC\SiLABS;C:\Keil_v5\C51\INC\SiLABS;D:\DDS_Projects\Wiznet w5500\Ethernet;C:\Keil_v5\C51\INC</IncludePath>
+              <IncludePath>C:\Keil_v5\C51\INC\SiLABS;..\DDS_Projects\Wiznet w5500\Ethernet;..\Wiznet_new</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -382,14 +382,9 @@
               <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>wizchip_conf.c</FileName>
+              <FileName>My_fnc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\wizchip_conf.c</FilePath>
-            </File>
-            <File>
-              <FileName>w5500.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\w5500.c</FilePath>
+              <FilePath>.\My_fnc.c</FilePath>
             </File>
           </Files>
         </Group>
