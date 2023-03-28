@@ -1,8 +1,8 @@
 #include <stdint.h>
 #include <SPI_Defs.h>
 
-#ifndef My_fnc.h
-#define My_fnc.h
+#ifndef _MY_FNC.H_
+#define _MY_FNC.H_
 
 void my_cs_sel();
 
@@ -12,8 +12,8 @@ uint8_t my_spi_rb(void);
 	
 void my_spi_wb(uint8_t);
 
-void cris_en(void);
+void my_cris_en(void);
 
-void cris_ex(void);
+void my_cris_ex(void);
 
 #endif

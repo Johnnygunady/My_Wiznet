@@ -6,9 +6,9 @@ sbit SDIH    = P2^0; //PG Data Input
 sbit SCLK    = P2^1; //PG Serial Clock
 sbit PG_CSL  = P3^0; //PG Chip Select 
 sbit SOR     = P1^7; //ROM Serial Output
-sbit SCLKR   = P1^5; //ROM Serial Clock
-sbit ROM_CSL = P1^6; //ROM Chip Select
-sbit SIR     = P1^4; //ROM Serial Input
+//sbit SCLKR   = P1^5; //ROM Serial Clock
+//sbit ROM_CSL = P1^6; //ROM Chip Select
+//sbit SIR     = P1^4; //ROM Serial Input
 sbit V0_VRFL = P3^5;
 sbit V0DIRL  = P2^2;
 sbit V0INVL  = P2^3;
@@ -39,11 +39,12 @@ sbit NSS  = P3^3;	//Select Ethernet Controller
  210.0Hz = 0x5208; F0RWL = 0x4208 ; F0RWM = 0x4005 ;
 */
 
-/*uint8_t WREN = 0x06;
-uint8_t WRDI = 0x04;
-uint8_t RDSR = 0x05;
-uint8_t READ = 0x03;
-uint8_t WRITE= 0x02;
-uint8_t ADDR = 0x02; //Something Addres*/
+//uint8_t WREN = 0x06;
+//uint8_t WRDI = 0x04;
+//uint8_t RDSR = 0x05;
+//uint8_t READ = 0x03;
+//uint8_t WRITE= 0x02;
+//uint8_t ADDR = 0x02; //Something Addres*/
+
 
 #endif

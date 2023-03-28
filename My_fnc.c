@@ -17,7 +17,7 @@ uint8_t my_spi_rb(void)
 	for(cnt = 0; cnt < 8; cnt++)
 	{
 		CLK = 0;
-		d = MISO;
+		d |= MISO;
 		d<<=1;
 		CLK = 1;
 	}
@@ -40,12 +40,12 @@ void my_spi_wb(uint8_t d)
 
 void my_cris_en()
 {
-	IE &= 0x7F;   //MSB in IE = 0 == Disable All Interrupts 
+	IE = ~(1<<7);   //MSB in IE = 0 == Disable All Interrupts 
 }
 
 void my_cris_ex()
 {
-	IE += 0x80;   //MSB in IE = 1 == Enable All Interrupts 
+	IE = (1<<7);   //MSB in IE = 1 == Enable All Interrupts 
 }
 
 
