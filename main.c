@@ -3,8 +3,8 @@
 #include "My_fnc.h"
 #include <stddef.h>
 
-uint8_t a = 0;
-uint32_t AddrSel = 0x001E;
+uint8_t read_data = 0;
+uint32_t AddrSel = 0x001F;
 
 void main(){
 	
@@ -18,8 +18,8 @@ wizchip_init(NULL, NULL);
 //reg_wizchip_spiburst_cbfunc(void (*spi_rb)(uint8_t* pBuf, uint16_t len), void (*spi_wb)(uint8_t* pBuf, uint16_t len));
 reg_wizchip_cris_cbfunc(my_cris_en, my_cris_ex);
 
-a = WIZCHIP_READ(AddrSel);
-if (a == 0x02) 
+read_data = WIZCHIP_READ(AddrSel);
+if (read_data == 0x02) 
 {SDIH = 0;
 };
 }
